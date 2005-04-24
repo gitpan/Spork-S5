@@ -1,6 +1,6 @@
 package Spork::S5;
 use Spork::Plugin -Base;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 const class_id => 's5';
 
@@ -58,9 +58,15 @@ this two lines:
 
     plugin_classes:
     - Spork::S5
+    - Spork::S5Theme
 
-If you have more plugin_classes installed just append C<Spork::S5> to
- the end. After this just use spork as usual.
+If you have more plugin_classes installed just append C<Spork::S5>
+and C<Spork::S5Theme> to the end. After this just use spork as
+usual.  C<Spork::S5Theme> is the basic class for different s5 theme,
+it also contains the default theme inside. You must also have one
+s5 theme plugin along with C<Spork::S5> in plugin_classes, otherwise
+"spork" would failed find "s5.html" template file and bombs out
+error messages.
 
 =head1 DESCRIPTION
 
