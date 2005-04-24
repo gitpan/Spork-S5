@@ -1,6 +1,6 @@
 package Spork::S5;
 use Spork::Plugin -Base;
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 const class_id => 's5';
 

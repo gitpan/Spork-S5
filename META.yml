@@ -1,5 +1,5 @@
 name: Spork-S5
-version: 0.02
+version: 0.03
 abstract: Write S5 slide with Spork syntax.
 author: Kang-min Liu <gugod@gugod.org>
 license: perl
