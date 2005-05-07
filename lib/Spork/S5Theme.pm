@@ -32,10 +32,9 @@ __template/s5/s5.html__
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>[% presentation_topic %]</title>
-<meta name="generator" content="S5" />
-<meta name="version" content="S5 1.0" />
-<meta name="presdate" content="20041007" />
-<meta name="author" content="Eric A. Meyer" />
+<meta name="generator" content="Spork-S5" />
+<meta name="version" content="Spork-S5 0.04" />
+<meta name="author" content="[% author_name %]" />
 <link rel="stylesheet" href="ui/slides.css" type="text/css" media="projection" id="slideProj" />
 <link rel="stylesheet" href="ui/opera.css" type="text/css" media="projection" id="operaFix" />
 <link rel="stylesheet" href="ui/print.css" type="text/css" media="print" id="slidePrint" />
