@@ -30,7 +30,7 @@ __template/s5/s5.html__
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=[% character_encoding %]">
 <title>[% presentation_topic %]</title>
 <meta name="generator" content="Spork-S5" />
 <meta name="version" content="Spork-S5 0.04" />
@@ -38,6 +38,9 @@ __template/s5/s5.html__
 <link rel="stylesheet" href="ui/slides.css" type="text/css" media="projection" id="slideProj" />
 <link rel="stylesheet" href="ui/opera.css" type="text/css" media="projection" id="operaFix" />
 <link rel="stylesheet" href="ui/print.css" type="text/css" media="print" id="slidePrint" />
+[% FOR css_file = hub.css.files -%]
+  <link rel="stylesheet" type="text/css" href="[% css_file %]" />
+[% END -%]
 <script src="ui/slides.js" type="text/javascript"></script>
 </head>
 <body>
